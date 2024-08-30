@@ -35,24 +35,27 @@
 </head>
 
 <body
-    style="min-width: 400px;height: 400px;display: flex;flex-direction: column;justify-content: center;align-items: center;">
+    style="min-width: 400px;height: 450px;display: flex;flex-direction: column;justify-content: center;align-items: center;">
     <div class="temCadastro" style="display: none;">
+        <button id="btnRemoverToken" style="position: absolute;top: 25px;right: 25px;background-color: red;"><strong>Remover token</strong></button>
         <h1>Consultar NFe/Gerar DANFe</h1>
+        <input type="text" class="chave" placeholder="Chave da nota fiscal" style="width: 100%;">
+        <b class="erro" style="color: red;display: none;margin-bottom: 10px;">erro</b>
+        <button id="btnConsultaXML">XML</button>
+        <button id="btnConsultaDANFe">DANFe</button>
+        <textarea class="campoXML" style="height: 150px;display: block;margin-top: 10px;width: 100%;border: 1px solid #ccc;"></textarea>.
+        
 
-        <div id="tokenField">
-            <label for="token">Token:</label>
-            <input type="text" id="token" readonly>
-        </div>
     </div>
     <div class="naoTemCadastro" style="display: none;">
         <h3>Já tem cadastro</h3>
-        <input type="text" placeholder="Seu token">
-        <button id="registerButton">Continuar</button>
+        <input type="text" class="token" placeholder="Seu token">
+        <button id="btnCadastrarToken">Continuar</button>
         <h3>Ainda não tem cadastro <a href="https://consultameudanfe.com.br/Login.php" target="_blank">clique aqui!</a></h3>
     </div>
+   
 
-
-
+    <div class="Status" >Aguardando consultas...</div>
 </body>
 
 </html>
