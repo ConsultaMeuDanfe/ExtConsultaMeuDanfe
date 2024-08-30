@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="../scripts/popup.js"></script>
+    <style>
+        *{
+            font-family: 'Arial';
+        }
+
+        input {
+            width: 250px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        a{
+            text-decoration: none;
+            color: #0073e6;
+        }
+    </style>
+</head>
+
+<body
+    style="min-width: 400px;height: 400px;display: flex;flex-direction: column;justify-content: center;align-items: center;">
+    <div class="temCadastro" style="display: none;">
+        <h1>Consultar NFe/Gerar DANFe</h1>
+
+        <div id="tokenField">
+            <label for="token">Token:</label>
+            <input type="text" id="token" readonly>
+        </div>
+    </div>
+    <div class="naoTemCadastro" style="display: none;">
+        <h3>Já tem cadastro</h3>
+        <input type="text" placeholder="Seu token">
+        <button id="registerButton">Continuar</button>
+        <h3>Ainda não tem cadastro <a href="https://consultameudanfe.com.br/Login.php" target="_blank">clique aqui!</a></h3>
+    </div>
+
+
+
+</body>
+
+</html>

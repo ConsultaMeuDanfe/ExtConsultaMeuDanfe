@@ -1,0 +1,11 @@
+{
+  "name": "extensao-consulta-meu-danfe",
+  "version": "1.0.0",
+  "description": "consulta meu danfe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Consulta meu danfe",
+  "license": "ISC"
+}
