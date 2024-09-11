@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-        xhr.open("POST", "https://api.consultameudanfe.com.br/ConsultaNota");
+        xhr.open("POST", "https://api.consultameudanfe.com/ConsultaNota");
         xhr.setRequestHeader("Content-Type", "application/json");
 
         xhr.send(data);
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-        xhr.open("POST", "https://api.consultameudanfe.com.br/GerarDanfe");
+        xhr.open("POST", "https://api.consultameudanfe.com/GerarDanfe");
         xhr.setRequestHeader("Content-Type", "application/json");
 
         xhr.send(data);
