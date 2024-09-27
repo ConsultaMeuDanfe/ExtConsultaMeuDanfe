@@ -49,6 +49,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     // Status 200 indica sucesso, então apenas faz log
                     document.querySelector('.Status').textContent = 'Consulta realizada com sucesso!';
                     document.querySelector('.campoXML').value = this.responseText;
+
+                    var blob = new Blob([this.responseText], { type: 'application/xml' });
+                    var link = document.createElement('a');
+                    link.href = window.URL.createObjectURL(blob);
+                    link.download = chave + '.xml';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link); // Remove o link após o clique
+
                     console.log(this.responseText);
                 } else {
                     // Qualquer outro status indica erro
